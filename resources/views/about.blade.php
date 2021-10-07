@@ -11,6 +11,6 @@
     <h1>Halaman About</h1>
     <h3><?= $name;?></h3>
     <p><?= $email;?></p>
-    <img src="img/profile.jpeg" alt="Daffa Akhdan Fadhillah" width="200">
+    <img src="img/<?= $image; ?>" alt="<?= $email; ?>" width="200">
 </body>
 </html>
