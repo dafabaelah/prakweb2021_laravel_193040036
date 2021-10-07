@@ -18,7 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('about', [
+        "name" => "Daffa Akhdan Fadhillah",
+        "email" => "193040036.daffa@mail.unpas.ac.id",
+        "image" => "profile.jpeg"
+    ]);
 });
 
 Route::get('/blog', function () {
