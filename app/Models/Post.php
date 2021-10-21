@@ -11,6 +11,7 @@ class Post extends Model
 
     // protected $fillable = ['title', 'excerpt', 'body'];
     protected $guarded = ['id'];
+    protected $with = ['category', 'author'];
 
     public function category() {
         return $this->belongsTo(Category::class);
@@ -19,4 +20,5 @@ class Post extends Model
     public function author() {
         return $this->belongsTo(User::class, 'user_id');
     }
+
 }
